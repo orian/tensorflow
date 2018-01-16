@@ -41,6 +41,14 @@ from source.
     go get -d github.com/tensorflow/tensorflow/tensorflow/go
     ```
 
+    Important notice: the version of the Go' library and Tensorflow must match.
+    E.g. if you have Tensorflow v1.4 C library you must use Go' package version r1.4.
+    This could be achived through:
+    ```sh
+    cd $GOPATH/src/github.com/tensorflow/tensorflow/tensorflow/go
+    git checkout r1.4
+    ```
+
 2.  Build the TensorFlow C library:
 
     ```sh
